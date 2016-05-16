@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50106" started-at="2016-02-16T13:32:35Z" finished-at="2016-02-16T13:33:25Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="50106" started-at="2016-02-16T13:32:35Z" finished-at="2016-02-16T13:33:25Z">
+      <class name="com.selenium.NewTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.selenium.NewTest@2d6a9952]" name="beforeTest" is-config="true" duration-ms="6782" started-at="2016-02-16T19:02:35Z" finished-at="2016-02-16T19:02:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="Test1()[pri:0, instance:com.selenium.NewTest@2d6a9952]" name="Test1" duration-ms="43304" started-at="2016-02-16T19:02:42Z" finished-at="2016-02-16T19:03:25Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[The given selector .//*[@id='messageBody']/div/table/tbody/tr/td/p[3] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal class name was specified
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'tejas-PC', ip: '192.168.2.217', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 629c328a-c4a3-4f45-ac03-ff37e3f6e7fc
+*** Element info: {Using=class name, value=.//*[@id='messageBody']/div/table/tbody/tr/td/p[3]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: The given selector .//*[@id='messageBody']/div/table/tbody/tr/td/p[3] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal class name was specified
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'tejas-PC', ip: '192.168.2.217', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 629c328a-c4a3-4f45-ac03-ff37e3f6e7fc
+*** Element info: {Using=class name, value=.//*[@id='messageBody']/div/table/tbody/tr/td/p[3]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:467)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at com.selenium.NewTest.Test1(NewTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector .//*[@id='messageBody']/div/table/tbody/tr/td/p[3] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal class name was specified
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'tejas-PC', ip: '192.168.2.217', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/tejas/AppData/Local/Temp/anonymous688030235192026255webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10633)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/tejas/AppData/Local/Temp/anonymous688030235192026255webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10664)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/tejas/AppData/Local/Temp/anonymous688030235192026255webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10668)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/tejas/AppData/Local/Temp/anonymous688030235192026255webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12534)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/tejas/AppData/Local/Temp/anonymous688030235192026255webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12539)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/tejas/AppData/Local/Temp/anonymous688030235192026255webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12481)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+      </class> <!-- com.selenium.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
