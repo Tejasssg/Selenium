@@ -22,35 +22,8 @@ import io.appium.java_client.android.AndroidDriver;
 public class NewTest {
 
 	WebDriver driver;
-	
-//	@Test
-//	 public void Test() throws InterruptedException {
-//	
-//	 Thread.sleep(10000);
-//	 driver.findElement(By.id("login_username")).sendKeys("abhishekj.1mobility@gmail.com");
-//	 driver.findElement(By.id("login_password")).sendKeys("smart@123");
-//	 driver.findElement(By.className("button-login")).click();
-//	 Thread.sleep(10000);
-//	 Assert.assertTrue(driver.getCurrentUrl().contains("https://ap29.smartsourcingglobal.net/dashboardc"));
-//	 String
-//	 abc=driver.findElement(By.className("device_ownership_graph")).getText();
-//	 System.out.println(abc);
-//	
-//	 }
-//	
-//	 @BeforeMethod
-//	 public void beforeTest() {
-//	 driver = new FirefoxDriver();
-//	 driver.get("https://ssg:*ssg!@123@ap29.smartsourcingglobal.net");
-//	 }
-//	
-//	 @AfterMethod
-//	 public void afterTest() {
-//	
-//	 driver.close();
-//	 }
-//	
-//	 }
+
+
 	 @Test
 	 public void Test1() throws InterruptedException {
 	
