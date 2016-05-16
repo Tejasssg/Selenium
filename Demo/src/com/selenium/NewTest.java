@@ -22,7 +22,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class NewTest {
 
 	WebDriver driver;
-
+//hi new comment
 
 	 @Test
 	 public void Test1() throws InterruptedException {
