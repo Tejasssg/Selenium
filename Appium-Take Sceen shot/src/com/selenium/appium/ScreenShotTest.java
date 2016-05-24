@@ -72,6 +72,17 @@ public class ScreenShotTest {
 		}
 	}
 
+	@Test
+	public void tejas() {
+		takeScreenShot();
+	}
+	
+	@Test
+	public void rohit() {
+		takeScreenShot();
+	}
+	
+	
 	@AfterTest
 	public void End() {
 		driver.quit();
